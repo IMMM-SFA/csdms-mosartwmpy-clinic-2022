@@ -1,0 +1,26 @@
+simulation:
+    name: My Simulation
+    output_path: .
+    restart_file: ./My_Simulation/restart_files/My_Simulation_restart_1980_02_01.nc
+    start_date: 1980-01-01
+    end_date: 1980-01-31
+
+grid:
+  path: /home/data/mosartwmpy_river_parameters.nc
+
+runoff:
+  path: /home/data/mosartwmpy_runoff_1980_2019.nc
+
+water_management:
+  enabled: true
+  demand:
+    path: /home/data/mosartwmpy_demand_1980_2019.nc
+  reservoirs:
+    parameters:
+      path: /home/data/mosartwmpy_reservoir_parameters.nc
+    dependencies:
+      path: /home/data/mosartwmpy_reservoir_dependency_database.parquet
+    streamflow:
+      path: /home/data/mosartwmpy_dam_mean_monthly_flow.parquet
+    demand:
+      path: /home/data/mosartwmpy_reservoir_mean_monthly_demand.parquet
