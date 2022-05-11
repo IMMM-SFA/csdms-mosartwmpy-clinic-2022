@@ -3,7 +3,7 @@ simulation:
     output_path: .
     restart_file: ./My_Simulation/restart_files/My_Simulation_restart_1980_02_01.nc
     start_date: 1980-02-01
-    end_date: 1980-02-31
+    end_date: 1980-02-29
 
 grid:
   path: /home/data/mosartwmpy_river_parameters.nc
